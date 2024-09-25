@@ -6,6 +6,9 @@
 # Ejecutar en desarrollo
 
 1. Clonar el repositorio
+```
+  git clone https://github.com/garySZA/pokedex-nest.git
+```
 2. Ejecutar 
 ```
   yarn install
@@ -18,3 +21,7 @@
 ```
   docker-compose up -d
 ```
+
+## Stack
+* MongoDB
+* Nest
