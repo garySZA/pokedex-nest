@@ -20,7 +20,9 @@ import { EnvConfiguration, JoiValidationSchema } from './config';
             rootPath: join(__dirname, '..', 'public'),
         }),
 
-        MongooseModule.forRoot('mongodb://localhost:27017/nest-pokemon'),
+        MongooseModule.forRoot(process.env.MONGO_URI, {
+            dbName: process.env.DATABASE_NAME,
+        }),
 
         PokemonModule,
 
